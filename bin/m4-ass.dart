@@ -71,11 +71,11 @@ void main (){
         }
         break;
       case "3":
-        double? total;
+        double total=0;
         for(int i=0; i<expence.length;i++){
-          total =total! + expence[i].amount;
+          total =total + expence[i].amount;
         }
-        print("Total Expenses:$total");
+        print("Total Expenses:${total.toCurrency()}");
         break;
       case "4":
         print("Thank you for using Expense Tracker!");
